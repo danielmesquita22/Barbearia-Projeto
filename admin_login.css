@@ -1,0 +1,61 @@
+:root{
+    --cor-primaria: #1a1a1a;
+    --cor-secundaria: #fa8500;
+    --cor-fundo: #f4f4f4;
+    --cor-texto: #f4f4f4;
+    --fonte-titulos: "Poppins", sans-serif;
+    --fonte-texto: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);    
+    font-family: var(--fonte-texto);
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: var(--cor-texto);
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--fonte-titulos);
+}
+.btn-login {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+    border: none;
+    padding: 10px;
+    color: var(--cor-texto);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn-login:hover {
+    background-color: darken(var(--cor-secundaria), 10%);
+}
+.alert {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .home-intro {
+        grid-template-columns: 1fr;
+    }
+    .home-intro img {
+        max-width: 100%;
+        margin: 20px auto;
+    }

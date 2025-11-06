@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo - Login</title>
+    <link rel="stylesheet" href="admin_login.css    ">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login Administrativo</h2>
+  </div>
+
+    <form method="POST" action="{{ url_for('admin_login') }}">
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Usuário</label>
+        <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Digite seu usuário" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" name="senha" id="senha" class="form-control" placeholder="Digite sua senha" required>
+      </div>
+
+      <button type="submit" class="btn btn-login">Entrar</button>
+    </form>
+  </div>
+</body>
+</html>
